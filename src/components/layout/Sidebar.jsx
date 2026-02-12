@@ -6,6 +6,7 @@ import cat4 from '../../assets/cat4.png'
 import cat5 from '../../assets/cat5.png'
 import cat6 from '../../assets/cat6.png'
 import cat7 from '../../assets/cat7.png'
+import logo from '../../assets/logo.png'
 
 function Sidebar() {
   const items = [
@@ -23,7 +24,7 @@ function Sidebar() {
   return (
     <aside className="hidden md:flex w-64 min-h-screen bg-slate-950 rounded-br-2xl rounded-tr-2xl text-slate-100 flex-col ">
       <div className="px-6 pt-10  pl-20 flex items-center ">
-        <img src="src/assets/logo.png" alt="Suitup Logo" className="w-18 h-11"/>
+        <img src={logo} alt="Suitup Logo" className="w-18 h-11"/>
       </div>
 
       <nav className="flex-1 px-3 py-5 space-y-1 text-sm">

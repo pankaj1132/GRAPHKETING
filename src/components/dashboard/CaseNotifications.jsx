@@ -1,4 +1,5 @@
-import calendarIcon from '../../assets/1.png'
+
+import bx from '../../assets/bx_calendar.png'
 
 const notifications = [
   {
@@ -55,7 +56,7 @@ function CaseNotifications() {
             </div>
             <p className="mt-1 flex items-center gap-2 text-[11px] text-slate-600">
               <span className="inline-flex h-5 w-5 items-center justify-center ">
-                <img src= "src/assets/bx_calendar.png"alt="calendar" className="h-3 w-3" />
+                <img src= {bx}alt="calendar" className="h-3 w-3" />
               </span>
               {item.due}
             </p>

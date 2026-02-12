@@ -1,4 +1,9 @@
+import profile from '../../assets/profile.png'
+import setting from '../../assets/setting.png'
+import clock from '../../assets/clock.png'
+import stop from '../../assets/stop-start.png'
 
+import notification from '../../assets/notification.png'
 function Header() {
   return (
     <header className="flex items-center justify-between gap-4 bg-[#F3F4F6] px-6 py-4">
@@ -34,7 +39,7 @@ function Header() {
 
       <div className="flex items-center gap-3 text-xs">
         <div className="flex items-center gap-3 rounded-xl bg-white px-4 py-1.5 text-[10px] font-medium text-white shadow-sm ">
-          <img src="src/assets/clock.png" alt="" className="h-6" />
+          <img src={clock} alt="" className="h-6" />
           <div className="space-y-0">
             <div className="text-[10px] text-slate-500">Time Tracker</div>
             <div className="text-sm font-semibold text-blue-700">08:40:10</div>
@@ -42,7 +47,7 @@ function Header() {
           
         </div>
         <div className=" rounded-xl bg-white px-4 py-3 text-[13px] font-medium text-white shadow-sm ">
-            <img src="src/assets/stop-start.png" alt="stop-start" className="h-6 " />
+            <img src={stop} alt="stop-start" className="h-6 " />
           </div>
 
         <button
@@ -63,18 +68,18 @@ function Header() {
           type="button"
           className="flex items-center justify-center rounded-full border border-slate-200 text-slate-500 hover:bg-slate-50"
         >
-          <img src="src/assets/notification.png" alt="notification" 
+          <img src={notification} alt="notification" 
           className="h-7 w-6 p-1"/>
         </button>
         <button
           type="button"
           className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 hover:bg-slate-50"
         >
-        <img src="src/assets/setting.png" alt="setting" className="h-7 w-6 p-1" />
+        <img src={setting} alt="setting" className="h-7 w-6 p-1" />
         </button>
         <div className="flex h-9 w-9 items-center justify-center rounded-full ">
           <img
-            src="src/assets/profile.png"
+            src={profile}
             alt="User Avatar"
             
           />
